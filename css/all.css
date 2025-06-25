@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-primary: #007BA7;
+  --color-primary-light: #AFEEEE;
+  --color-primary-bright: #00CED1;
+  --color-primary-dark: #2F4F4F;
+  --color-primary2: #004D99;
+  --color-primary2-light: #87CEFA;
+  --color-primary2-bright: #007FFF;
+  --color-primary2-dark: #003153;
+  --color-secondary: #FFBF00;
+  --color-secondary-light: #FFEF00;
+  --color-secondary-dark: #704214;
+  --color-gary: #5F86C1;
+  --color-gray90: #121A26;
+  --color-gray80: #25354D;
+  --color-gray70: #395073;
+  --color-gray60: #4C6B9A;
+  --color-gray50: #5F86C1;
+  --color-gray40: #7F9ECD;
+  --color-gray30: #9FB6D9;
+  --color-gray20: #BFCEE6;
+  --color-gray10: #DFE6F2;
+  --color-bg: #ffffff;
+  --color-bg2: #F5F5DC;
+  --color-text: #004D99;
+  --color-link: #008080;
+  --color-border: #5E86C1;
+  --color-warning: #FF80BF;
+  --color-warning-light: #FF007F;
+  --color-warning-dark: #C41E3A;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --radius: 8px;
+  --button-spacing: 8px;
+  --button-radius: 8px;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-h5: 16px;
+  --font-size-h6: 14px;
+  --font-size-body: 16px;
+  --font-size-small: 13px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1440px;
+  --font-size-body-rwd: 12px;
+}
+
+/* Check */
+html :where(*) {
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+
+.wrap {
+  max-width: var(--breakpoint-lg);
+  margin: 0 auto;
+  background: var(--color-gray10);
+}
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--color-primary-dark);
+}
+.navbar .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar .menu ul li {
+  padding: 8px;
+}
+.navbar .menu ul li a {
+  text-decoration: none;
+  padding: 8px;
+  color: var(--color-primary-dark);
+}
+.navbar .menu ul li a:hover {
+  font-weight: bold;
+  color: var(--color-link);
+}
+.navbar .menu ul li a.active {
+  box-shadow: inset 0 -3px 0 0 var(--color-link);
+}
+.navbar .menu .date {
+  background-color: var(--color-gray60);
+  color: var(--color-bg);
+  padding: 8px 16px;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.navbar .menu-user {
+  align-items: center;
+}
+.navbar .menu-user img {
+  width: 32px;
+  height: 32px;
+  margin: 0px 16px;
+}/*# sourceMappingURL=all.css.map */
