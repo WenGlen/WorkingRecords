@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>工作記錄系統(alpha)</title>
     <link rel="stylesheet" href="css/all.css">
+    
 </head>
 
 <body>
+
+  
   <div class="wrap">
     <!-- 上方導覽列 -->
     <header class="navbar">
       <nav class="menu">
-        <div class="date">114/06/25</div>
-        <ul>
+          <div class="title"> 工作紀錄系統 </div>
+          <ul>
           <li><a href="project_number.html">案件編號</a></li>
           <li><a href="index.html" class="active">工作日誌</a></li>
           <li><a href="work_plan.html">工作計畫</a></li>
-        </ul>
+          </ul>
       </nav>
-      
+
       <div class="menu menu-user">
-        <span>陳桂芳</span>
-        <img src="img/account.png" alt="使用者頭像">
+          <span>陳桂芳</span>
+          <img src="img/account.png" alt="使用者頭像">
       </div>
     </header>
+
+
+    <main class="container">
+      <!-- 🔹 側邊欄 -->
+      <aside class="sidebar">
+        <div class="title"> 工作日誌 </div>
+        <ul>
+          <li><a href="#" class="active">工作內容</a></li>
+          <li><a href="#">案件</a></li>
+          <li><a href="#">指派</a></li>
+        </ul>
+      </aside>
+
+      <!-- 🔹 右側內容 -->
+      <section class="content">
+        <!-- 📌 工作計畫 -->
+        <section class="block work-plan">
+          <h2>工作計劃</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>日期</th><th>成員</th><th>工作類型</th><th>案件編號</th>
+                <th>案件名稱</th><th>工作內容</th><th>備註說明</th><th>進度</th><th>主管註記</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 資料列 -->
+            </tbody>
+          </table>
+          <button>確認送出</button>
+        </section>
+
+        <!-- 📌 今天日誌 -->
+        <section class="block today-log">
+          <h2>今天日誌</h2>
+          <div>今日時數合計：<span>0</span></div>
+          <form class="log-form">
+            <!-- 工時/類型/編號/名稱/內容選項... -->
+          </form>
+        </section>
+
+        <!-- 📌 工作記錄 -->
+        <section class="block work-record">
+          <h2>工作記錄</h2>
+          <form class="filter-form">
+            <!-- 日期區間、成員搜尋、送出按鈕 -->
+          </form>
+          <table>
+            <!-- 同樣有表格標頭與資料列 -->
+          </table>
+        </section>
+
+       </section>
+
+    </main>
+
   </div>
+
+
 </body>
+
 </html>
